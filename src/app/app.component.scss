@@ -1,0 +1,11 @@
+@import "styles";
+
+.text {
+    @include font-height(22, 28);
+    color: $brand-green;
+}
+
+.btn {
+    @include font-height(25, 32);
+    color: $brand-white;
+}

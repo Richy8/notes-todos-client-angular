@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "e915907d-e2e7-4042-aeea-769e065bb159"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -30,8 +33,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/scss"
+              ]
+            },
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "src/scss/styles.scss"
             ],
             "scripts": []
           },

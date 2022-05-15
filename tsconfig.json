@@ -23,6 +23,7 @@
       "dom"
     ]
   },
+  "exclude": ["**/*.scss"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

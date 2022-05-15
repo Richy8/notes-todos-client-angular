@@ -1,0 +1,44 @@
+// Application color pallette //
+$brand-blue: #099bdf;
+$brand-yellow: #e7d002;
+$brand-red: #e74949;
+$brand-green: #4DD091;
+$brand-black: #1a1d22;
+$brand-black-light: #30333C;
+$brand-white: #FFFFFF;
+$brand-grey: #A8A8A8;
+$brand-grey-light: #F4F4F4;
+
+
+// App Color Pallete
+$app-color: () !default;
+$app-color: map-merge((
+  "brand-blue": $brand-blue,
+  "brand-yellow": $brand-yellow,
+  "brand-red": $brand-red,
+  "brand-green": $brand-green,
+  "brand-black": $brand-black,
+  "brand-black-light": $brand-black-light,
+  "brand-white": $brand-white,
+  "brand-grey": $brand-grey,
+  "brand-grey-light": $brand-grey-light,
+  ),
+  $app-color);
+
+/*------------------------------------*\
+	App Color Palette
+\*------------------------------------*/
+@each $color-name,
+$color in $app-color {
+  .#{$color-name} {
+    color: $color !important;
+  }
+
+  .#{$color-name}-bg {
+    background-color: $color !important;
+  }
+
+  .border-#{$color-name} {
+    border: 1px solid $color !important;
+  }
+}
